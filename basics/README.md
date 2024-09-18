@@ -8,4 +8,4 @@ mdkir 6-firstdirectory : creates a directory named 6-firstdirectory
 mv : for moving a file
 rm : for deleting a file
 rmdir : for deleting a directory
-cd .. : for changing the directory to the previous one 
+cd - : for changing the directory to the previous one 

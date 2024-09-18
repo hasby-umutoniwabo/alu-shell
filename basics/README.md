@@ -14,3 +14,4 @@ file /tmp/iamafile : prints the type of the file named iamafile
 ln -s : creates a symbolic link
 cp -u *.html .. : copies html files from current dir to the parent dir
 mv [A-Z]* : moves all files beginning with an uppercase letter
+rm *~: Removing all files in the current dir that end with ~

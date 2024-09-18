@@ -7,3 +7,4 @@ ls -la --numeric-uid-gid  - list long format and hidden with user and group IDs 
 mdkir 6-firstdirectory - creates a directory named 6-firstdirectory
 mv - for moving a file
 rm -for deleting a file
+rmdir -for deleting a directory

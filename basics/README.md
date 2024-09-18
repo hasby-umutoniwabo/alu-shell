@@ -11,3 +11,4 @@ rmdir : for deleting a directory
 cd - : for changing the directory to the previous one
 ls -la . .. /boot : display the file listings for the current directory, the parent directory, and the /boot directory, all in long format, including hidden files 
 file /tmp/iamafile : prints the type of the file named iamafile
+ln -s : creates a symbolic link

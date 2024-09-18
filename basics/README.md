@@ -5,3 +5,4 @@ ls -l - displays content in a long format
 ls -la - displays in long format including hidden files
 ls -la --numeric-uid-gid  - list long format and hidden with user and group IDs numerically
 mdkir 6-firstdirectory - creates a directory named 6-firstdirectory
+mv - for moving a file

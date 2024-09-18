@@ -9,4 +9,4 @@ mv : for moving a file
 rm : for deleting a file
 rmdir : for deleting a directory
 cd - : for changing the directory to the previous one
-(ls -la . (ls -la ..) (ls -la /boot)) : display the file listings for the current directory, the parent directory, and the /boot directory, all in long format, including hidden files 
+ls -la . .. /boot : display the file listings for the current directory, the parent directory, and the /boot directory, all in long format, including hidden files 

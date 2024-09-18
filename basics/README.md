@@ -13,3 +13,4 @@ ls -la . .. /boot : display the file listings for the current directory, the par
 file /tmp/iamafile : prints the type of the file named iamafile
 ln -s : creates a symbolic link
 cp -u *.html .. : copies html files from current dir to the parent dir
+mv [A-Z]* : moves all files beginning with an uppercase letter

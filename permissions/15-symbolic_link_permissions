@@ -1,2 +1,2 @@
 #!/bin/bash
-install -o vincent -g staff _hello
+chown vincent:staff _hello

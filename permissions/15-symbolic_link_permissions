@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff _hello
+setfacl -m u:vincent:rw,g:staff:rw _hello

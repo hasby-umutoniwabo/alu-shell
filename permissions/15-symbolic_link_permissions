@@ -1,2 +1,2 @@
 #!/bin/bash
-setfacl -m u:vincent:rw,g:staff:rw _hello
+sudo chown -h vincent:staff _hello

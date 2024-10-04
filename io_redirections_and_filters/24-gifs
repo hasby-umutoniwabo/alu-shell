@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec sh -c 'for f in "$@" do name="${f##*/}" printf "%s\n" "${name%.gif}" done' sh {} + | sort -f | uniq
+declare -A seen_dirs find . -type f -iname "*.gif" | while read f do dir="${f%/*}" name="${f##*/}" if [ -z "${seen_dirs[$dir]}" ] then printf "%s\n" "${name%.gif}" seen_dirs[$dir]=1 fi done | sort -f

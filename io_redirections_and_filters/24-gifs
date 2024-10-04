@@ -1,15 +1,2 @@
 #!/bin/bash
-seen_dirs=()
-find . -type f -iname "*.gif" | while IFS= read -r f
-do
-    dir="${f%/*}"            # Get the directory path
-    name="${f##*/}"          # Get the file name
-    base_name="${name%.gif}" # Remove the .gif extension
-
-    # Check if the directory is already in the seen_dirs array
-    if [[ ! " ${seen_dirs[*]} " =~ " $dir " ]]
-    then
-        seen_dirs+=("$dir")  # Add directory to seen_dirs array
-        printf "%s\n" "$base_name" # Print the base name
-    fi
-done | sort -f
+seen_dirs=() find . -type f -iname "*.gif" | while IFS= read -r f do dir="${f%/*}" name="${f##*/}" base_name="${name%.gif}" if [[ ! " ${seen_dirs[*]} " =~ " $dir " ]] then seen_dirs+=("$dir") printf "%s\n" "$base_name" fi done | sort -f

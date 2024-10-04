@@ -1,9 +1,5 @@
 #!/bin/bash
-
-# Create an array to store seen directories
 seen_dirs=()
-
-# Find all .gif files
 find . -type f -iname "*.gif" | while IFS= read -r f
 do
     dir="${f%/*}"            # Get the directory path

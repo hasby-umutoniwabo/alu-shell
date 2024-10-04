@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -A seen_dirs find . -type f -iname "*.gif" | while read -r f do dir="${f%/*}" name="${f##*/}" base_name="${name%.gif}" if [ -z "${seen_dirs[$dir]}" ] then seen_dirs[$dir]=1 printf "%s\n" "$base_name" fi done | sort -f
+seen_dirs=() find . -type f -iname "*.gif" | while IFS= read -r f do dir="${f%/*}" name="${f##*/}" base_name="${name%.gif}"if [[ ! " ${seen_dirs[*]} " =~ " $dir " ]] then  seen_dirs+=("$dir")  printf "%s\n" "$base_name" fi done | sort -f

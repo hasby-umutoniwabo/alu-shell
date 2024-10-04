@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec sh -c 'for f in "$@" do printf "%s\n" :${f##*/}" done' sh {} + | sort -f | uniq | while read name do printf "%s\n" "${name%.gif}"done
+find . -type f -iname "*.gif" -exec sh -c 'for f in "$@"; do printf "%s\n" "${f##*/}"; done' sh {} + | sort -f | uniq | while read name do printf "%s\n" "${name%.gif}" done | awk '!seen[$0]++'
